@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--titulo de la pagina-->
+    <title>Registro</title>
+    <!--añadimos los estilos del css correspondiente-->
+    <link rel="stylesheet" href="CSS\formulario.css">
+</head>
+<!--body donde se encuentra el contenido de la pagina-->
+<body>
+    <center>
+    <!--aca redireccionamos a la pagina a la que que queremos acceder al darle al boton-->
+    <form action="indice.html" method="post">
+        <!--etiqueta de nombre y campo de texto tipo texto-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+        <!--etiqueta de correo y campo de texto tipo email para recibir solo texto vinculado a una cuenta-->
+        <label for="correo">correo:</label>
+        <input type="email" name="correo" placeholder="ejemplo@dominio.com">
+        <!--etiqueta de contraseña y campo de texto tipo password que no deja ver el texto del campo-->
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" name="contraseña" placeholder="Ingrese su contraseña">
+        <!--etiqueta de fecha de nacimiento y campo de tipo date, para recibir anexar una fecha-->
+        <label for="fecha de nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha">
+        <!--etiqueta de genero y campo de tipo radio donde se agregan 3 radio butons para que el usuario seleccione 
+        UNA UNICA OPCION-->
+        <label for="genero">genero:</label>
+        <div class="radio-group">
+            <input type="radio" name="opcion" value="opcion1"> Hombre
+            <input type="radio" name="opcion" value="opcion2"> Mujer
+            <input type="radio" name="opcion" value="opcion2"> otros
+        </div>
+        <!--boton que nos dirigita al indice-->
+        <button type="submit">Acceder</button>
+    </form>
+    </center>
+</body>
+</html>

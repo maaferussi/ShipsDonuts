@@ -1,0 +1,422 @@
+
+
+/* General Styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Ginebra, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fbffab; /* Color de fondo de respaldo */
+
+}
+
+/* Estilo para el header */
+header {
+    background-image: url('imagenes/header glaseado.png'); /* Ruta relativa a la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 100;
+    color: #fff; /* Color de texto blanco para visibilidad */
+    margin: 0; /* Elimina cualquier margen del header */
+}
+
+/* Título del header */
+h1 {
+    font-family: 'Bookman Old Style', serif;
+    font-size: 60px;
+    margin: 0; /* Elimina el margen del título */
+}
+
+/* AAAAAAAAa */
+.content {
+    background-color: #ffc7e9;
+}
+
+/* Barra de navegación */
+.css ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0; /* Elimina el margen de la lista */
+    list-style: none;
+    background-color: transparent; /* Fondo transparente */
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 50;
+}
+
+/* Cada elemento de la lista en la barra de navegación */
+.css li {
+    position: relative;
+    padding: 0 10px; /* Un poco de espacio a los lados para los bordes */
+}
+
+/* Línea divisoria entre los elementos de la barra */
+.css li:not(:last-child) {
+    border-right: 2px solid #ccc; /* Línea de 2px, color gris claro */
+}
+
+/* Estilo para los enlaces */
+.css a {
+    display: block;
+    padding: 1em 2em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-family: 'Bookman Old Style', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Estilo de hover */
+.css a:hover {
+    background-color: #ffffff;
+    color: #f063a1; /* Color del texto al hacer hover */
+}
+
+/* Submenú */
+.css ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #f063a1;
+}
+
+.css ul li:hover ul {
+    display: block;
+}
+
+.css ul li ul li a {
+    padding: 1em;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .css ul {
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+
+    .css a {
+        padding: 1em 2em;
+        text-align: center;
+    }
+}
+
+.columnas {
+    display: flex; /* Usa un diseño flexible*/
+    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
+    margin-top: 20px; /* Espacio encima de las columnas */
+}
+
+/* Estilo de cada columna */
+.columna {
+    flex: 1; /* Cada columna toma el mismo espacio disponible */
+    margin: 0 10px; /* Espacio horizontal entre columnas */
+    padding: 15px; /* Relleno dentro de las columnas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+    list-style-type: circle;
+}
+
+/* Estilos específicos para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column; /* Cambia el diseño de las columnas a una sola columna */
+    }
+
+    .columna {
+        margin: 10px 0; /* Espacio vertical entre las columnas */
+    }
+}
+
+img {
+    width: 100%; /* La imagen se ajusta al 100% del ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto original */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+    max-width: 100%; /* Evita que la imagen exceda el ancho del contenedor */
+    max-height: 460px; /* Limita la altura máxima de la imagen */
+}
+
+h3 {
+    font-size: 30px;
+}
+
+/* Estilo para las tablas */
+table {
+    
+    width: 80%; /* La tabla ocupa el 100% del contenedor */
+    margin-top: 20px; /* Espacio encima de la tabla */
+    border-collapse: collapse; /* Elimina los espacios entre las celdas */
+}
+
+/* Borde de la tabla y las celdas */
+table, th, td {
+    border: 1px solid #000; /* Borde negro alrededor de la tabla y celdas */
+}
+
+/* Estilo para las celdas de la tabla */
+th, td {
+    padding: 10px; /* Relleno dentro de las celdas */
+    text-align: center; /* Centra el texto dentro de las celdas */
+}
+
+.content h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.top-title {
+    display: block;
+    font-size: 2.5em;
+    color: #f063a1; /* Color rojo para la parte superior */
+    font-weight: bold;
+    font-family: 'Bookman Old Style', serif;
+}
+
+.bottom-title {
+    display: block;
+    font-size: 2.5em;
+    color: #ff93c2; /* Color verde para la parte inferior */
+    font-weight: bold;
+    margin-top: -10px; /* Ajustar el espacio entre las líneas */
+    font-family: 'Bookman Old Style', serif;
+}
+
+.content p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.content ul li {
+    margin-bottom: 8px;
+}
+
+.content img {
+    width: 100%; /* La imagen se ajusta al 100% del ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto original */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+    max-width: 70%; /* Evita que la imagen exceda el ancho del contenedor */
+    max-height: 400px; /* Limita la altura máxima de la imagen */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    text-align: center; /* Centra el texto dentro de los elementos */
+}
+
+/* Estilo para las imágenes dentro de las tablas */
+table img {
+    width: 120px;  /* Ajusta el tamaño de las imágenes (puedes cambiar este valor) */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.columnas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten a una nueva fila si es necesario */
+    justify-content: space-around; /* Opcional: distribuye las columnas de manera equitativa */
+    gap: 20px; /* Añade espacio entre las columnas */
+}
+
+.columna {
+    flex: 1 1 45%; /* Las columnas ocupan 45% del contenedor en pantallas grandes y se ajustan en pantallas pequeñas */
+    min-width: 250px; /* Evita que las columnas se vuelvan demasiado pequeñas */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .columna {
+        flex: 1 1 100%; /* En pantallas pequeñas, las columnas ocupan el 100% del ancho */
+    }
+}
+
+#por-que-elegirnos {
+    padding: 20px;
+    background-color: #fbffab;
+}
+
+.contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.campo {
+    flex: 1;
+    padding: 15px;
+    background-color: #e8ed8b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.campo img {    
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.campo h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.campo ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.campo ul li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+
+/* Estilos para el botón */
+.btn-redirigir {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f063a1; /* Color de fondo (naranja) */
+    color: white; /* Color del texto */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+}
+
+.btn-redirigir:hover {
+    background-color: #ec3886; /* Color de fondo cuando se pasa el ratón (más oscuro) */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+.btn-redirigir:active {
+    transform: scale(0.98); /* Efecto de reducción al hacer clic */
+}
+
+
+/* Estilos generales */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.columnas1 {
+    display: flex; /* Usamos Flexbox para colocar las columnas lado a lado */
+    justify-content: center; /* Centra las columnas horizontalmente */
+    align-items: flex-start; /* Alinea las columnas al principio (arriba) */
+    gap: 20px; /* Espacio entre las columnas */
+    border: 2px solid #f063a1; /* Borde alrededor del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno dentro del cuadro */
+    background-color: #fbffab; /* Fondo suave dentro del cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del cuadro */
+}
+
+.columna, .columna2 {
+    width: 45%; /* Establecemos un ancho de 45% para cada columna */
+}
+
+.columna img {
+    width: 100%; /* Hacemos que la imagen ocupe todo el espacio disponible */
+    max-width: 300px; /* Maximo tamaño de la imagen */
+}
+
+h3 {
+    font-size: 18px;
+}
+
+/* Media query para pantallas más pequeñas (por ejemplo, móviles) */
+@media (max-width: 768px) {
+    .columnas1 {
+        flex-direction: column; /* Cambiamos la dirección de las columnas a vertical */
+        align-items: center; /* Alineamos las columnas al centro */
+    }
+
+    .columna, .columna2 {
+        width: 100%; /* Hacemos que las columnas ocupen todo el ancho */
+        margin-bottom: 20px; /* Agregamos un margen inferior para separarlas */
+    }
+
+    .columna img {
+        max-width: 100px; /* Ajustamos el tamaño de la imagen */
+    }
+}
+
+/* Estilo solo para la lista dentro de .columnas1 */
+.columnas1 .columna2 ul {
+    list-style-type: disc; /* Muestra las viñetas (puntos) */
+    padding-left: 20px; /* Espacio a la izquierda para las viñetas */
+  }
+  
+  /* Estilo para los elementos de la lista dentro de .columnas1 */
+  .columnas1 .columna2 ul li {
+    font-size: 16px; /* Tamaño de la fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+  }
+  
+/* Estilo para hacer las imágenes más grandes */
+#info .columna img, 
+#elegirnos .columna img {
+    width: 100%;  /* Asegura que la imagen ocupe todo el espacio disponible */
+    max-width: 600px;  /* Puedes ajustar este valor según lo grande que desees la imagen */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    object-fit: contain;  /* Ajusta la imagen para que se vea bien dentro de su contenedor */
+}
+
+/* Establecer un color de fondo para toda la tabla */
+table {
+    background-color: #e8ed8b;  /* Color de fondo gris claro */
+
+}
+
+/* AAAAAAAAa */
+.menu {
+    background-color: #ff93c2;
+}
+
+/* Añadir bordes a las columnas */
+.columnas {
+    display: flex;  /* Asegura que las columnas estén en línea (horizontalmente) */
+    gap: 20px;  /* Espacio entre las columnas */
+}
+
+.columna {
+    border: 2px solid #000;  /* Color y grosor del borde (puedes cambiar #000 por el color que prefieras) */
+    padding: 20px;  /* Espacio dentro de las columnas */
+    border-radius: 8px;  /* Opcional: bordes redondeados */
+}
+
+h3 {
+    font-family: 'Bookman Old Style', serif;
+    font-size: 40px;
+    margin: 0; /* Elimina el margen del título */
+}
